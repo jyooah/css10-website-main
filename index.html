@@ -2,6 +2,7 @@
 	<head>
 		<title>CSS</title>
 		<link rel="stylesheet" href="css/index.css">
+        
 		<script src="https://kit.fontawesome.com/a129886e82.js" crossorigin="anonymous"></script>
 		<script src="js/index.js"> </script>
 	</head>
@@ -25,14 +26,14 @@
 			    <a href="#">
 				    <i class="fa-brands fa-google-drive"></i>
 			    </a>
-			    <a href="#">
+			    <a href="https://github.com/jyooah/css10-website-main" target="_blank">
 				    <i class="fa-brands fa-square-github"></i>
 			    </a>
 		    </div>
 
 		    <div id="nav-members-section" class="nav-section">
-			    <a href="#">MEMBERS</a>
-			    <a href="#">CONTACT</a>
+			    <a href="members.html">MEMBERS</a>
+			    <a href="contacts.html">CONTACT</a>
 		    </div>
 		</div>
 
@@ -45,7 +46,14 @@
 
     <main>
         <article data-index="0" data-status="active">
-            <div class="article-image-section article-section"> </div>
+            <div class="article-image-section article-section">
+                <div class="media-container">
+                    <video autoplay muted loop>
+                        <source src="videos/playback_1.mp4"  type="video/mp4">                        
+                    </video>
+
+                </div>
+                </div>
 
             <div class="article-description-section article-section"> 
                 <p> Environmental Degredation (soil) causes and backgrounds here. </p>
@@ -71,8 +79,15 @@
         </article>
 
         <article data-index="1" data-status="inactive">
-            <div class="article-image-section article-section"> </div>
+            <div class="article-image-section article-section"> 
+                <div class="media-container">
+                    <video autoplay muted loop>
+                        <source src="videos/mining.mp4"  type="video/mp4">                        
+                    </video>
 
+                </div>
+            </div>
+                
             <div class="article-description-section article-section"> 
                 <p> Environmental Degredation (soil) causes and backgrounds here. </p>
                     <div class="readmore-section">
@@ -97,7 +112,13 @@
         </article>
 
         <article data-index="2" data-status="inactive">
-            <div class="article-image-section article-section"> </div>
+            <div class="article-image-section article-section">
+                <div class="media-container">
+                    <video autoplay muted loop>
+                        <source src="videos/forestfire.mp4"  type="video/mp4">                        
+                    </video>
+
+                </div> </div>
 
             <div class="article-description-section article-section"> 
                 <p> Environmental Degredation (soil) causes and backgrounds here. </p>
@@ -174,3 +195,5 @@
             </div>
         </article>
     </main>
+</body>
+</html>
