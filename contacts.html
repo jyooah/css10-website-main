@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a129886e82.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/contacts.css" />
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <nav data-toggled="false" data-transitionable="true">
+      <div id="nav-logo-section" class="nav-section">
+        <a href="index.html">
+          <i class="fa-solid fa-plate-wheat"></i>
+        </a>
+      </div>
+
+      <div id="nav-mobile-section">
+        <div id="nav-content-section" class="nav-section">
+          <a href="#">ABOUT</a>
+          <a href="#">GALLERY</a>
+          <a href="#">ARTICLES</a>
+        </div>
+
+        <div id="nav-socials-section" class="nav-section">
+          <a href="#">
+            <i class="fa-brands fa-google-drive"></i>
+          </a>
+          <a
+            href="https://github.com/jyooah/css10-website-main"
+            target="_blank"
+          >
+            <i class="fa-brands fa-square-github"></i>
+          </a>
+        </div>
+
+        <div id="nav-members-section" class="nav-section">
+          <a href="members.html">MEMBERS</a>
+          <a href="contacts.html">CONTACT</a>
+        </div>
+      </div>
+
+      <button id="nav-toggle-button" type="button" onclick="handleNavToggle()">
+        <span>Menu</span>
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <script src="js/indexmobile.js"></script>
+    </nav>
+
+    <section class="contacts-container">
+      <div class="contacts" id="jomar">
+        <img src="images/plankton.jpg" alt="neo" />
+        <p class="name">JOMAR BALAGTAS</p>
+        <ul>
+          <li><i class="fa-solid fa-envelope"></i>@auf.edu.ph</li>
+          <li><i class="fa-brands fa-github"></i> https://github.com/</li>
+        </ul>
+      </div>
+
+      <div class="contacts" id="neo">
+        <img src="images/neo.png" alt="neo" />
+        <p class="name">NEO JEZER PARE</p>
+        <ul>
+          <li><i class="fa-solid fa-envelope"></i>pare.neojezer@auf.edu.ph</li>
+          <li><i class="fa-brands fa-github"></i> https://github.com/Neioo</li>
+        </ul>
+      </div>
+
+      <div class="contacts" id="glai">
+        <img src="images/glaiza.jpg" alt="neo" />
+        <p class="name">GLAIZA NATIVIDAD</p>
+        <ul>
+          <li><i class="fa-solid fa-envelope"></i>@auf.edu.ph</li>
+          <li><i class="fa-brands fa-github"></i> https://github.com/</li>
+        </ul>
+      </div>
+
+      <div class="contacts" id="gio">
+        <img src="images/gio.jpg" alt="neo" />
+        <p class="name">GIO ALCUIZAR</p>
+        <ul>
+          <li><i class="fa-solid fa-envelope"></i>@auf.edu.ph</li>
+          <li><i class="fa-brands fa-github"></i> https://github.com/</li>
+        </ul>
+      </div>
+
+      <div class="contacts" id="ian">
+        <img src="images/neptune,jpg.jpg" alt="neo" />
+        <p class="name">IAN BAUTISTA</p>
+        <ul>
+          <li><i class="fa-solid fa-envelope"></i>@auf.edu.ph</li>
+          <li><i class="fa-brands fa-github"></i> https://github.com/</li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>
