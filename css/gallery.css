@@ -1,0 +1,63 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* default colors */
+/* Do not use any colors outside of the ones specified */
+:root {
+  --background-color: rgb(30, 87, 68);
+  --border-color: rgb(255, 255, 255, 0.5);
+  --highlight-color: rgb(95, 209, 120);
+  --background-color-shade-1: #1b4e3d;
+  --background-color-shade-2: #356857;
+  --background-color-shade-3: #184636;
+  --gray-color-1: #cccccc;
+}
+
+body {
+  overflow-x: scroll;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--background-color);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gray-color-1);
+}
+
+/* images */
+.gallery {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  align-items: center;
+}
+img {
+  width: 350px;
+  padding: 1.2rem;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+  filter: opacity(70%);
+}
+
+img:hover {
+  transform: scale(1.2);
+  filter: opacity(100%);
+}

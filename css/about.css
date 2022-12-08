@@ -1,0 +1,90 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* default colors */
+/* Do not use any colors outside of the ones specified */
+:root {
+  --background-color: rgb(30, 87, 68);
+  --border-color: rgb(255, 255, 255, 0.5);
+  --highlight-color: rgb(95, 209, 120);
+  --background-color-shade-1: #1b4e3d;
+  --background-color-shade-2: #356857;
+  --background-color-shade-3: #184636;
+  --gray-color-1: #cccccc;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin: 3rem auto;
+  text-align: center;
+  padding: 3rem;
+  width: 80%;
+}
+
+.title {
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgb(255, 255, 255, 0.5);
+  font-weight: 500;
+}
+
+footer {
+  font-family: "Raleway", sans-serif;
+  color: white;
+  margin: auto;
+  font-weight: 500;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--background-color);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gray-color-1);
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-y: scroll;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin: 3rem auto;
+    text-align: center;
+    padding: 3rem;
+    width: 80%;
+  }
+
+  .title {
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgb(255, 255, 255, 0.5);
+    font-weight: 500;
+  }
+
+  footer {
+    font-family: "Raleway", sans-serif;
+    color: white;
+    margin: auto;
+    font-weight: 500;
+  }
+}
