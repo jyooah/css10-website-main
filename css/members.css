@@ -18,6 +18,7 @@
 
 body {
   overflow-y: scroll;
+  overflow-y: hidden;
 }
 
 img {
@@ -174,7 +175,23 @@ li {
 .text i:hover {
   color: var(--gray-color-1);
 }
+
+.contribution--text {
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  padding-left: 2rem;
+  list-style: circle;
+  padding-bottom: 1rem;
+}
+
+
+.contribution--text ul li {
+  list-style: circle !important;
+}
 @media (min-width: 400px) {
+  body {
+    font-size: 12px;
+  }
   img {
     height: 100px;
     width: 100px;
@@ -242,7 +259,7 @@ li {
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
   }
   .carousel__button--left {
-    left: -5px;
+    left: 0px;
     color: var(--background-color-shade-1);
     background-color: var(--gray-color-1);
     width: 12px;
@@ -254,7 +271,7 @@ li {
   }
 
   .carousel__button--right {
-    right: -20px;
+    right: -1px;
     color: var(--background-color-shade-1);
     background-color: var(--gray-color-1);
     width: 12px;
@@ -331,7 +348,24 @@ li {
   }
 }
 
+.contribution--text {
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  padding-left: 2rem;
+  list-style: circle;
+}
+
+
+
+.contribution--text ul li {
+  list-style: circle;
+}
+
 @media (min-width: 600px) {
+  body {
+    font-size: 12px;
+    overflow-y: hidden;
+  }
   img {
     height: 100px;
     width: 100px;
@@ -399,7 +433,7 @@ li {
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
   }
   .carousel__button--left {
-    left: -40px;
+    left: -20px;
     color: var(--background-color-shade-1);
     background-color: var(--gray-color-1);
     width: 18px;
@@ -486,9 +520,24 @@ li {
   .text i:hover {
     color: var(--gray-color-1);
   }
+  .contribution--text {
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    padding-left: 2rem;
+    list-style: circle;
+  }
+  
+  
+  
+  .contribution--text ul li {
+    list-style: circle;
 }
 
 @media (min-width: 1000px) {
+  body {
+    font-size: 16px;
+    overflow-y: hidden;
+  }
   img {
     height: 200px;
     width: 200px;
@@ -611,6 +660,17 @@ li {
   li {
     list-style: none;
   }
+
+  .contribution--text {
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    padding-left: 2rem;
+    list-style: circle;
+  }
+  
+  
+  .contribution--text ul li {
+    list-style: circle;
 
   /* text/contribtions */
 
