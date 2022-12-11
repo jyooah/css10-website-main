@@ -1,90 +1,83 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
-.dropdown{
-  background-color: rgb(30, 87, 68) !important;
-  color: rgb(242, 247, 245) !important;
-  transition: 0.2s ease;
+:root {
+  --background-color: rgb(30, 87, 68);
+  --border-color: rgb(255, 255, 255, 0.5);
+  --highlight-color: rgb(95, 209, 120);
+  --background-color-shade-1: #1b4e3d;
+  --background-color-shade-2: #356857;
+  --background-color-shade-3: #184636;
+  --gray-color-1: #cccccc;
 }
 
-
-
-
-.btn2:hover {
-  background-color:  rgba(50, 148, 107, 0.418) !important;
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
 }
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--background-color);
+}
 
-.btn2{
-  color: rgb(242, 247, 245) !important;
-  border: none;
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gray-color-1);
+}
+
+.accordion {
   background-color: rgb(30, 87, 68) !important;
-  padding: 20px;
+  overflow-y: scroll;
+}
+
+.accordion-button {
+  color: rgb(242, 247, 245) !important;
+  border: 1px solid var(--border-color);
+  background-color: var(--background-color);
+  padding: 25px;
   font-family: "Raleway", sans-serif;
-  font-size: 20px;
-  border: 2px solid rgb(255, 255, 255);
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+  font-size: 45px;
 }
 
-.dropdown-menu{
-  display: none;
-  position: absolute;
-  background-color: #d2fccd !important;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  border: 5px solid rgb(30, 87, 68);
-  border-radius: 10px;
-  z-index: 1;
-  min-width: 100%;
+/*button when clicked*/
+.accordion-button:not(.collapsed) {
+  background-color: var(--background-color);
+  border: 1px solid var(--border-color);
 }
 
+/*arrow*/
+.accordion-button:not(.collapsed)::after {
+  filter: brightness(0%);
+  invert: 90%;
+}
 
-.dropdown-item{
-  font-size: 17px;
-  color: black;
-  padding: 8px;
+/* button after clicked*/
+.accordion-button:focus {
+  box-shadow: none;
+  border: 1px solid var(--border-color);
+}
+
+.accordion-button:hover {
+  background-color: rgba(23, 105, 71, 0.719) !important;
+}
+
+.accordion-body {
+  background-color: rgb(255, 255, 255);
+}
+
+.dropdown-item {
+  font-size: 25px;
+  color: var(--background-color);
   text-decoration: none;
   display: block;
   font-family: "Raleway", sans-serif;
 }
 
-.dropdown-item:hover{
-  background-color: rgba(50, 148, 107, 0.418) !important;
-
+.dropdown-item:hover {
+  color: rgba(50, 155, 111, 0.548) !important;
 }
-
-.btn{
-  color: rgb(242, 247, 245) !important;
-  border: none;
-  background-color: rgb(30, 87, 68) !important;
-  padding: 20px;
-  font-size: 20px;
-  font-family: "Raleway", sans-serif;
-  border: 2px solid rgb(255, 255, 255);
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
-}
-
-.btn:hover {
-  background-color:  rgba(50, 148, 107, 0.418) !important;
-  border: 2px solid rgb(255, 255, 255);
-  --bs-btn-hover-border-color: rgb(255, 255, 255);
-  --bs-btn-active-border-color: rgb(255, 255, 255);
-}
-
-
-
-
-table, tr, td{
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 100px;
-  text-align: center;
-  
- 
-}
-
-
-
-
-
