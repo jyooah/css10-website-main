@@ -81,3 +81,7 @@
 .dropdown-item:hover {
   color: rgba(50, 155, 111, 0.548) !important;
 }
+
+.title {
+  font-size: 1.5em;
+}
