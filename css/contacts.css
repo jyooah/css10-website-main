@@ -39,8 +39,8 @@ ul li {
 }
 
 .contacts {
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -62,7 +62,7 @@ i {
 @media (min-width: 600px) {
   .contacts-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     margin: 6rem auto;
     gap: 22px;
     width: 80%;
